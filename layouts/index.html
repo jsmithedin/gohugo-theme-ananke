@@ -21,7 +21,7 @@
   {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
 
   <section class="w-100 mw8">
-    {{ range first $n_posts (where .Site.Pages "Section" $section_name) }}
+    {{ range first $n_posts (where .Site.RegularPages "Section" $section_name) }}
       <div class="relative w-100 mb4">
         {{ partial "summary-with-image.html" . }}
       </div>
