@@ -211,7 +211,7 @@ models:
   post:
     type: page
     label: Posts
-    folder: post
+    folder: higher
     exclude: _index.md
     layout: _default/single.html
     fields:
